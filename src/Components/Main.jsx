@@ -39,6 +39,14 @@ export default function Main() {
                 "ReactJS è una libreria per costruire interfacce utente moderne e componenti riutilizzabili, ideale per applicazioni a pagina singola (SPA).",
         },
     ];
+    const [selected, setSelected] = useState(languages[0]);
+
+    return (
+        <main>
+
+        </main>
+    )
 }
 
-const [selected, setSelected] = useState(languages[0]);
+
+
