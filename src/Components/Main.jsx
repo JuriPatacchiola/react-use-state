@@ -43,7 +43,23 @@ export default function Main() {
 
     return (
         <main>
+            <div className="button-container">
+                {languages.map((lang) => (
+                    <button
+                        key={lang.id}
+                        className={`lang-button ${selected.id === lang.id ? "active" : ""
+                            }`}
+                        onClick={() => setSelected(lang)}
+                    >
+                        {lang.title}
+                    </button>
+                ))}
+            </div>
 
+            <div className="card">
+                <h2>{selected.title}</h2>
+                <p>{selected.description}</p>
+            </div>
         </main>
     )
 }
