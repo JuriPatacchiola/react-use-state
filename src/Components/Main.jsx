@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 export default function Main() {
     const languages = [
@@ -39,3 +40,5 @@ export default function Main() {
         },
     ];
 }
+
+const [selected, setSelected] = useState(languages[0]);
